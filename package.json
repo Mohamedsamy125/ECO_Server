@@ -1,0 +1,11 @@
+{
+  "name": "eco-engineering-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check js/app.js && node --check js/workflow.js && node --check js/storage.js && node --check js/config.js"
+  }
+}

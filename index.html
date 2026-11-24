@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="ECO — مساحة عمل للخدمات الهندسية والمالية، وحصر الأعمال وإعداد الرسومات التصميمية.">
+  <title>ECO | مساحة العمل الهندسية</title>
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="القائمة الرئيسية">
+      <a class="brand" href="#home" aria-label="ECO الرئيسية"><img src="./assets/logo.png" alt="شعار الكلية الفنية العسكرية" width="56" height="56"><span><strong>ECO<span class="brand-dot">.</span></strong><small>منصة الخدمات الهندسية</small></span></a>
+      <div class="nav-label">مساحة العمل</div>
+      <nav id="navigation"></nav>
+      <div class="sidebar-separator"></div>
+      <div class="nav-label">الخدمات الهندسية</div>
+      <nav id="service-navigation" aria-label="الخدمات"></nav>
+      <div class="sidebar-bottom">
+        <div class="local-note"><span class="local-icon" id="local-icon"></span><strong>الحفظ المحلي</strong><p>المحادثات محفوظة في هذا المتصفح.</p></div>
+        <button class="nav-item help-button" id="help-button"></button>
+        <div class="sidebar-version"><span dir="ltr">ECO WORKSPACE</span><span dir="ltr">v0.1</span></div>
+      </div>
+    </aside>
+    <button class="sidebar-overlay" id="sidebar-overlay" aria-label="إغلاق القائمة" hidden></button>
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="breadcrumb"><button class="icon-button menu-button" id="menu-button" aria-label="فتح القائمة" aria-expanded="false"></button><span>مساحة العمل</span><span class="breadcrumb-slash">/</span><strong id="page-label">الرئيسية</strong></div>
+        <div class="topbar-left"><span class="access-label" id="access-label">الدخول مفتوح</span><button class="profile-button" id="profile-button" aria-label="خيارات تسجيل الدخول"><span id="profile-icon"></span><span id="profile-name">زائر</span></button></div>
+      </header>
+      <main id="main" tabindex="-1"></main>
+      <footer class="footer"><span>ECO · الخدمات الهندسية</span></footer>
+    </div>
+  </div>
+  <dialog id="dialog"><div id="dialog-content"></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript>يرجى تفعيل JavaScript لاستخدام مساحة العمل.</noscript>
+</body>
+</html>
